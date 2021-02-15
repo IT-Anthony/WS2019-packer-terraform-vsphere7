@@ -59,4 +59,4 @@ Ensuite, utilisez simplement les commandes *packer build winserv2019.json* puis 
 Je sais que cet ensemble de scripts n'est pas parfait, mais il n'y avait pas beaucoup de guides/documentations qui fonctionnent avec ce builder, alors j'espère que cela vous aidera quand même!
 #
 
-Pour plus d'informations, voici l'article de mon blog qui en lien: https://notamax.be
+Pour plus d'informations, voici l'article de mon blog qui en lien: https://github.com/IT-Anthony/WS2019-packer-terraform-vsphere7
