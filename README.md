@@ -7,7 +7,7 @@ Set of scripts used to:
 
 ▶️ Create a template of Windows Server 2019, adding an autounattend.xml file for an automatic installation (*in French/Belgium*) ;
 
-▶️ Once the VM has started, the vmtools.bat script launches and installs the vmware-tools as well as activates WinRM for Packer, then the VM shuts down ;
+▶️ Once the VM has started, the vmtools.bat script launches and installs the vmware-tools as well as activates WinRM for Packer (*via the winrm.ps1*), then the VM shuts down ;
 
 ▶️ Via Terraform and the *terraform apply -var 'nombre=X'* command, creation of X virtual machines ;
 
@@ -36,7 +36,7 @@ Ensemble de scripts utilisés pour:
 
 ▶️ Créez un modèle de Windows Server 2019, en ajoutant un fichier autounattend.xml pour une installation automatique (*en français / Belgique*);
 
-▶️ Une fois la VM démarrée, le script vmtools.bat est lancé, pour installer les vmware-tools ainsi que pour activer WinRM for Packer, puis la VM s'arrête;
+▶️ Une fois la VM démarrée, le script vmtools.bat est lancé, pour installer les vmware-tools ainsi que pour activer WinRM for Packer (*via le script winrm.ps1*), puis la VM s'arrête;
 
 ▶️ Via Terraform et la commande *terraform apply -var 'nombre=X'*, création de X machines virtuelles;
 
