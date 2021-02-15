@@ -1,0 +1,61 @@
+{
+  "builders": [
+    { 
+      "CPUs": "{{user `vm-cpu-num`}}",
+      "RAM": "{{user `vm-mem-size`}}",
+      "cluster": "{{user `vsphere-cluster`}}",
+      "convert_to_template": true,
+      "datacenter": "{{user `vsphere-datacenter`}}",
+      "datastore": "{{user `vsphere-datastore`}}",
+      "guest_os_type": "windows2019srv_64Guest",
+      "insecure_connection": "true",
+      "iso_paths": [
+        "{{user `iso_ws2019`}}",
+        "{{user `iso_vmtools`}}"
+      ],
+      "network_adapters": [
+        {
+          "network": "{{user `vsphere-network`}}",
+          "network_card": "vmxnet3"
+        }
+      ],
+      "password": "{{user `vsphere-password`}}",
+      "disk_controller_type": "lsilogic-sas",
+      "storage": [  
+        {
+          "disk_size": "{{user `vm-disk-size`}}",
+          "disk_thin_provisioned": true
+        }
+      ],
+      "floppy_files": [  
+        "autounattend.xml",
+        "winrm.ps1",
+        "vmtools.cmd"      
+      ],
+      "type": "vsphere-iso",
+      "username": "{{user `vsphere-user`}}",
+      "vcenter_server": "{{user `vsphere-server`}}",
+      "vm_name": "{{user `vm-name`}}",
+      "communicator": "winrm",
+      "winrm_username": "Administrateur",
+      "winrm_password": "Password!",
+      "folder": "TemplatesWindows",
+      "ip_wait_timeout": "1h"
+    }
+  ],
+  "variables": {
+    "iso_ws2019": "[truenas-01] WIN-ISOs/Windows_Server_2019_64Bits.ISO",
+    "iso_vmtools": "[truenas-01] WIN-ISOs/VMToolsWS2019.iso",
+    "vm-cpu-num": "2",
+    "vm-disk-size": "20000",
+    "vm-mem-size": "2048",
+    "vm-name": "Win2019",
+    "vsphere-cluster": "BE-01",
+    "vsphere-datacenter": "NOTAMAX-BRUXELLES",
+    "vsphere-datastore": "truenas-01",
+    "vsphere-network": "VM Network",
+    "vsphere-password": "Password!",
+    "vsphere-server": "192.168.5.185",
+    "vsphere-user": "administrator@notamax.local"
+  }
+}
