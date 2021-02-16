@@ -40,9 +40,9 @@ I know this script set isn't perfect, but there is very few guides/docs that wor
 ## Introduction (français)
 Ensemble de scripts utilisés pour:
 
-▶️ Créez un modèle de Windows Server 2019, en ajoutant un fichier autounattend.xml pour une installation automatique (*en français / Belgique*);
+▶️ Créer un modèle de Windows Server 2019, en ajoutant un fichier autounattend.xml pour une installation automatique (*en français / Belgique*);
 
-▶️ Une fois la VM démarrée, le script vmtools.bat est lancé, pour installer les vmware-tools ainsi que pour activer WinRM for Packer (*via le script winrm.ps1*), puis la VM s'arrête;
+▶️ Une fois la VM démarrée, le script vmtools.bat est lancé pour installer les vmware-tools ainsi que pour activer WinRM for Packer (*via le script winrm.ps1*), puis la VM s'arrête;
 
 ▶️ Via Terraform et la commande *terraform apply -var 'nombre=X'*, création de X machines virtuelles;
 
