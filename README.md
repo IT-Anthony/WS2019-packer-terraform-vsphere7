@@ -1,5 +1,5 @@
 # WS2019-packer-terraform-vsphere7
-![alt text](https://img.shields.io/badge/packer-v1.6.6-brightgreen) ![alt text](https://img.shields.io/badge/packer-v0.14.6-brightgreen) ![alt text](https://img.shields.io/badge/vsphere-v7.0U1c-blue) 
+![alt text](https://img.shields.io/badge/packer-v1.6.6-brightgreen) ![alt text](https://img.shields.io/badge/terraform-v0.14.6-brightgreen) ![alt text](https://img.shields.io/badge/vsphere-v7.0U1c-blue) 
 
 Template of WS2019 via Packer/Autounattend.xml to vSphere 7, then deployment via Terraform. French explanations are under the English ones.
 
